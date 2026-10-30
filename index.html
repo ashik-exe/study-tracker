@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>HSC Study Tracker — Routine</title>
+    
+    <!-- Preload Primary Bengali Fonts for Instant Zero-Latency Rendering -->
+    <link rel="preload" href="/fonts/hind-siliguri-v14-bengali-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/hind-siliguri-v14-bengali-600.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- Google Fonts: Hind Siliguri (Bengali Primary), Noto Sans Bengali (Fallback), Inter (Latin) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sage: {
+                page: '#D9E0D4',
+                50: '#F6F8F4',
+                100: '#E9EDE6',
+                200: '#D8DFD4',
+                300: '#C2CCC0',
+                400: '#A4B2A1',
+                500: '#83937F',
+                600: '#647260',
+                700: '#4D584A',
+                800: '#373F35',
+                900: '#232922',
+              },
+              olive: {
+                card: '#3D4739',
+                deep: '#293126',
+                subtle: '#4E5B4A',
+                light: '#E2E8DC',
+                accent: '#475642',
+              },
+              cream: {
+                card: '#F6F8F3',
+                surface: '#FAFBF8',
+                border: '#DDE3D7',
+              },
+              mustard: {
+                card: '#E5C44F',
+                hover: '#D4B33F',
+                light: '#F8EEBD',
+                text: '#4A3B05',
+              },
+              charcoal: {
+                DEFAULT: '#1A2118',
+                heading: '#151B14',
+                body: '#2D352B',
+                muted: '#636F60',
+              },
+            },
+            fontFamily: {
+              sans: [
+                '"Hind Siliguri"',
+                '"Noto Sans Bengali"',
+                'Inter',
+                '-apple-system',
+                'BlinkMacSystemFont',
+                '"Segoe UI"',
+                'Roboto',
+                'sans-serif',
+              ],
+              bengali: [
+                '"Hind Siliguri"',
+                '"Noto Sans Bengali"',
+                'sans-serif',
+              ],
+              latin: [
+                'Inter',
+                '-apple-system',
+                'BlinkMacSystemFont',
+                '"Segoe UI"',
+                'Roboto',
+                'sans-serif',
+              ],
+            },
+            fontSize: {
+              'page-title': ['1.75rem', { lineHeight: '2.125rem', fontWeight: '700' }],
+              'section-title': ['1.25rem', { lineHeight: '1.75rem', fontWeight: '600' }],
+              'card-title': ['1.0625rem', { lineHeight: '1.5rem', fontWeight: '600' }],
+              'body-syllabus': ['0.9375rem', { lineHeight: '1.55rem', fontWeight: '400' }],
+              'secondary-desc': ['0.875rem', { lineHeight: '1.375rem', fontWeight: '400' }],
+              'metadata': ['0.75rem', { lineHeight: '1.125rem', fontWeight: '500' }],
+            },
+            boxShadow: {
+              soft: '0 4px 20px -2px rgba(26, 33, 24, 0.04), 0 2px 6px -1px rgba(26, 33, 24, 0.02)',
+              card: '0 8px 30px -4px rgba(26, 33, 24, 0.06), 0 4px 12px -2px rgba(26, 33, 24, 0.03)',
+              modal: '0 16px 40px -6px rgba(21, 27, 20, 0.16)',
+            },
+            borderRadius: {
+              '2.5xl': '1.25rem',
+              '3xl': '1.5rem',
+              '3.5xl': '1.75rem',
+              '4xl': '2rem',
+            },
+            screens: {
+              xs: '375px',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Hind Siliguri", "Noto Sans Bengali", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background-color: #D9E0D4;
+        color: #1A2118;
+        -webkit-tap-highlight-color: transparent;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        line-height: 1.5;
+        letter-spacing: normal;
+      }
+      ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #A4B2A1;
+        border-radius: 9999px;
+      }
+    </style>
+  </head>
+  <body class="bg-sage-page text-charcoal antialiased selection:bg-olive-light selection:text-olive-deep">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

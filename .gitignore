@@ -1,0 +1,15 @@
+
+# Local AI agent tools and generated cache
+.agents/
+__pycache__/
+*.pyc
+
+# Local AI agent tools and generated cache
+.agents/
+__pycache__/
+*.pyc
+node_modules/
+dist/
+d63b611fa41944f29457ea00e5da719d.zip
+*.pdf
+*.PDF
